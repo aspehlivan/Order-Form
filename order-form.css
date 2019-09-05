@@ -1,0 +1,57 @@
+div {
+  display: grid;
+    grid-template-columns: 200px 200px 1fr;
+    grid-gap: 16px;
+    font-size:16px;
+}
+
+label {
+  grid-column: 1 / 2;
+}
+
+input,
+button {
+    grid-column: 2 / 3;
+}
+input{
+  height: 30px;
+}
+
+span{
+  color:red;
+  display: none;
+}
+
+thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;}
+
+
+#divTable{
+  margin-top: 30px;
+  width: 60%;
+}
+
+#orderTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#orderTable td, #orderTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#orderTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#orderTable tr:nth-child(odd){
+  background-color:grey;
+  color: white;
+}
